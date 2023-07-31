@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .container {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    font-size: 28px;
+  }
+  
+  .carousel {
+    width: 300px;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+    margin: 20px auto;
+  }
+  
+  .review {
+    width: 300px;
+    height: 150px;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease;
+  }
+  
+  .review p {
+    margin: 0;
+    padding: 10px;
+  }
+  
+  .review.active {
+    opacity: 1;
+  }
